@@ -111,8 +111,8 @@ enum i2c_ack
 	NACK = 1
 };
 
-#define DEFAULT_TRIS            (SK | DO | CS | GPIO0 | GPIO1 | GPIO2 | GPIO3)  /* SK/DO/CS and GPIOs are outputs, DI is an input */
-#define DEFAULT_PORT            (SK | CS)       				/* SK and CS are high, all others low */
+#define DEFAULT_TRIS            (SK | DO | CS | GPIO0 | GPIO1 | GPIO3)  /* SK/DO/CS and GPIOs are outputs, DI is an input */
+#define DEFAULT_PORT            (SK | CS | GPIO0 | GPIO1 | GPIO3)       	/* SK and CS are high, all others low */
 
 enum mpsse_commands
 {
